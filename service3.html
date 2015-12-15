@@ -1,0 +1,17 @@
+<html>
+<script src="angular.min.js"></script>
+<script src="service3.js"></script>
+<body ng-app="myApp">
+<div ng-controller="myCtrl1">
+<h3>This is Controller 1</h3>
+<input ng-model="product.name">
+<input ng-model="product.price">
+{{product.name}} and {{product.price}}
+</div>
+
+<div ng-controller="myCtrl2">
+<h3>This is Controller 2</h3>
+{{product.name}} and {{product.price}}
+</div>
+</body>
+</html>

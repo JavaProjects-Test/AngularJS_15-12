@@ -1,0 +1,16 @@
+<html>
+<script src="angular.min.js"></script>
+<script src="calculator.js"></script><body ng-app="myApp">
+<div ng-controller="myCtrl"  class="alert alert-error">
+First Number<br>
+<input type="number" ng-model="number1"  placeholder="Number..." required><br>
+Second Number<br>
+<input type="number" ng-model="number2"  placeholder="Number..." required></br><br>
+<button ng-click="add()">Add</button>
+<button ng-click="subtract()">Subtract</button>
+<button ng-click="multiply()">Multiply</button>
+<button ng-click="divide()">Divide</button><br><br>
+Result<br><input ng-model="result" readonly>
+</div>
+</body>
+</html>

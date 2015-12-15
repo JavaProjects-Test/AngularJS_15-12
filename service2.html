@@ -1,0 +1,20 @@
+<html>
+<script src="angular.min.js"></script>
+<script src="service2.js"></script>
+<body ng-app="myApp">
+<div ng-controller='myCtrl1'>
+      <div>
+        <h4>Ctrl1</h4>
+        <div>{{text}}</div>       
+		<input type='text' ng-model='text' />
+		<button type='button' ng-click='send();'>Send Data</button>
+      </div>
+    </div>
+    <div ng-controller='myCtrl2'>
+      <div>
+        <h4>Ctrl2</h4>
+        <div>{{text}}</div>
+      </div>
+    </div>
+</body>
+</html>
